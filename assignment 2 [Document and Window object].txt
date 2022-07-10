@@ -1,0 +1,35 @@
+Q)1)
+
+Document Object: The document object represent a webpage that is loaded in the browser. By accessing the document object, 
+we can access the element in the HTML page. With the help of document object, we can add dynamic content to our webpage.
+The document object can be accessed with a window.document or just document. 
+
+Window Object: The window object is the topmost object of the DOM hierarchy. It represents a browser window or frame that
+displays the contents of the webpage. Whenever a window appears on the screen to display the contents of the document, the 
+window object is created.
+
+Difference between Document and Window:
+                   
+              DOCUMENT                                     WINDOW
+1)It represents any HTML document or        1)It represents a browser window or a 
+webpage that is loaded in the browser.      frame that displays the contents of the
+                                            webpage.
+2)It is loaded inside the window.           2)It is the very first object that is 
+                                            in the browser.
+3)It is the object of window property.      3)It is the object of the browser.
+4)All the tags, elements with attributes    4)Global object functions, and variables
+in HTML are part of the document.           of Javascript are members of the window 
+                                            object.
+5)We can access the document from           5)We can access the window from the window 
+window using window.document                only. i.e. window.window
+6)The document is part of BOM (browser      6)The window is part of BOM, not DOM.
+object model) and DOM (document object 
+model).
+7)Properties of document objects such as    7)Properties of the window object cannot
+title, body, cookies, etc can also be       be accessed by the document object.
+accessed by a window like this 
+window.document.title 
+Syntax: document.propertyname;              Syntax: window.propertyname;
+Example:                                    Example:
+  document.title : will return the              window.innerHeight : will return the 
+title of the document                       height of the content area of the browser
